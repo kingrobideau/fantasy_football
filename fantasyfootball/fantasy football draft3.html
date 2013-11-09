@@ -1,0 +1,98 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fantasy Football Draft</title>
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui-1.10.3.custom.js"></script>
+		<script type="text/javascript" src="lib/d3.v3.js"></script>
+		<script type="text/javascript" src="lib/underscore.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+		<style type="text/css">
+			.header {
+				width:1200px;
+				height: 70px;
+				text-align: center;
+				font: 50px georgia;
+				color: #212E7D;
+				background: white;
+				margin:0px auto;
+			}
+			 .ui-autocomplete-category {
+				font-weight: bold;
+				padding: .2em .4em;
+				margin: .8em 0 .2em;
+				line-height: 1.5;
+			}
+			.sidebar {
+				width: 300px;
+				height: 600px;
+				text-align: center;
+				font: 50px arial;
+				background: white;
+				border: 2px solid #708090;
+				margin: 10px;
+				float: left;
+			}
+			.rosterSlot {
+				width: 298px;
+				height: 30px;
+				text-align: left;
+				font: 16px arial;
+				color: black;
+				background: linear-gradient(to bottom, #E2E3EC,  #C4C5CC);
+				border: 1px solid #C4C5CC;
+				margin-top: 5px;
+			}
+			.pickContainer {
+				width:1100;
+				height: 60px;
+				text-align: center;
+				margin: 10px auto;
+			}
+			.pick {
+				width: 70px;
+				height: 50px;
+				margin-left: 10px;
+				margin-top: 10;
+				color: black;
+				background: white);
+				line-height: 50px;
+				display: inline-block;
+				text-align: center;
+				font: bold 12px/10px Helvetica, Verdana, Tahoma;;
+			}
+			.canvas {
+				width: 900px;
+				height: 500px;
+				border: 2px solid #708090;
+				background: white;
+				margin: 10px;
+				float: left;
+			}
+			body {
+				background: white;
+			}		
+		</style>
+	</head>
+	<body>
+		<div class="header" align="center">Draft Dashboard	</div>
+		<div class="pickContainer" align="center"></div>
+		<div class="bodyContainer">
+			<div class="ui-widget" background="#212E7D" align="center">
+				<label for="Players"></label>
+				<input id="playerSearch" value="Search players" color="gray"></input>
+			</div>
+			<div id='canvasOptions' align="center">
+				<button class="button" id="topNButton" align="center">Top N</button>
+				<button class="button" id="forceButton" align="center">Force Layout</button>
+			</div>
+			<div class="sidebar" align="left"></div>
+			<div class="canvas" align="center"></div>
+		</div>
+		<script type="text/javascript" src='main.js'></script>
+		<script type="text/javascript" src='pickContainer.js'></script>
+		<script type="text/javascript" src='sidebar.js'></script>
+		<script type="text/javascript" src='visualizationSelector.js'></script>
+	</body>
+</html>

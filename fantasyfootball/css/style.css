@@ -1,0 +1,29 @@
+.header {
+		width:700px;
+		height: 70px;
+		text-align: center;
+		font: 50px georgia;
+		color: #2F4F4F;
+		background: #33CC66;
+		border:1px solid #708090;
+		margin:0px auto;
+	}
+.control {
+		position: absolute;
+		width:700px;
+		height: 55px;
+		top: 90px;
+		color: #2F4F4F;
+		background: linear-gradient(#3D3D3D, #4D4E52);
+		border:1px solid #708090;
+		margin:0px auto;
+	}
+
+body {
+	background: white;
+	}		
+/*
+body {
+		background: linear-gradient(to right, #E6E6E6, #DEDEDE);
+	}
+*/
